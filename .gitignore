@@ -1,0 +1,6 @@
+# Ignore local compiler folder
+/Compiler/
+
+# Ignore backups and temp files
+*.bak
+*.tmp
