@@ -4,3 +4,4 @@
 # Ignore backups and temp files
 *.bak
 *.tmp
+*.exe
