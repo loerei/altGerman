@@ -14,7 +14,6 @@ I did.
   - *Hold `Shift` or turn `CapsLock` ON to type the uppercase counterparts.*
 - **System Tray Integration**: Starts minimized to the system tray. Click the tray icon to toggle the settings dashboard.
 - **Auto Startup**: Option to automatically launch the application when Windows boots.
-- **Ultra-lightweight & Portable**: Single executable (~1.17 MB) with no installation required and zero external dependencies.
 
 ## Usage
 
