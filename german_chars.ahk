@@ -1,9 +1,9 @@
 ﻿; AltGerman.ahk
-; Press Alt+S => ÃŸ
-; Press Alt+U => Ã¼
-; Press Alt+O => Ã¶
-; Press Alt+A => Ã¤
-; Hold Shift or have CapsLock ON to get uppercase (Ã„ Ã– Ãœ and áºž)
+; Press Alt+S => ÃƒÅ¸
+; Press Alt+U => ÃƒÂ¼
+; Press Alt+O => ÃƒÂ¶
+; Press Alt+A => ÃƒÂ¤
+; Hold Shift or have CapsLock ON to get uppercase (Ãƒâ€ž Ãƒâ€“ ÃƒÅ“ and Ã¡ÂºÅ¾)
 
 #NoEnv
 #SingleInstance Force
@@ -16,6 +16,12 @@ Menu, Tray, Add, Show Dashboard, ShowGui
 Menu, Tray, Add, Exit, ExitLabel
 Menu, Tray, Default, Show Dashboard
 Menu, Tray, Tip, AltGerman Active
+
+; Set custom tray icon
+if (A_IsCompiled)
+    Menu, Tray, Icon, %A_ScriptFullPath%, 1
+else if (FileExist(A_ScriptDir "\icon.ico"))
+    Menu, Tray, Icon, %A_ScriptDir%\icon.ico
 
 ; Robust Tray Click Hook (Single/Double click to open GUI)
 OnMessage(0x404, "AHK_NOTIFYICON")
@@ -98,28 +104,28 @@ IsUpperRequested() {
 
 !u::
     if IsUpperRequested()
-        SendInput {U+00DC}  ; Ãœ
+        SendInput {U+00DC}  ; ÃƒÅ“
     else
-        SendInput {U+00FC}  ; Ã¼
+        SendInput {U+00FC}  ; ÃƒÂ¼
 return
 
 !o::
     if IsUpperRequested()
-        SendInput {U+00D6}  ; Ã–
+        SendInput {U+00D6}  ; Ãƒâ€“
     else
-        SendInput {U+00F6}  ; Ã¶
+        SendInput {U+00F6}  ; ÃƒÂ¶
 return
 
 !a::
     if IsUpperRequested()
-        SendInput {U+00C4}  ; Ã„
+        SendInput {U+00C4}  ; Ãƒâ€ž
     else
-        SendInput {U+00E4}  ; Ã¤
+        SendInput {U+00E4}  ; ÃƒÂ¤
 return
 
 !s::
     if IsUpperRequested()
-        SendInput {U+1E9E}  ; áºž
+        SendInput {U+1E9E}  ; Ã¡ÂºÅ¾
     else
-        SendInput {U+00DF}  ; ÃŸ
+        SendInput {U+00DF}  ; ÃƒÅ¸
 return
