@@ -1,6 +1,7 @@
 # AltGerman
 
-AltGerman is a lightweight, portable Windows utility that enables global keyboard shortcuts to quickly type German accented characters.
+Ever crashed out using a German keyboard?
+I did.
 
 ## Features
 
