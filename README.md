@@ -18,5 +18,5 @@ I did.
 ## Usage
 
 1. Download and run `german_chars.exe`.
-2. The application will start minimized directly in your system tray (look for the green **H** icon).
+2. The application will start minimized directly in your system tray (look for the custom **Ä** icon).
 3. Click the tray icon to open the settings dashboard where you can enable or disable startup registration.
