@@ -1,9 +1,9 @@
 ﻿; AltGerman.ahk
-; Press Alt+S => ÃƒÅ¸
-; Press Alt+U => ÃƒÂ¼
-; Press Alt+O => ÃƒÂ¶
-; Press Alt+A => ÃƒÂ¤
-; Hold Shift or have CapsLock ON to get uppercase (Ãƒâ€ž Ãƒâ€“ ÃƒÅ“ and Ã¡ÂºÅ¾)
+; Press Alt+S => ÃƒÆ’Ã…Â¸
+; Press Alt+U => ÃƒÆ’Ã‚Â¼
+; Press Alt+O => ÃƒÆ’Ã‚Â¶
+; Press Alt+A => ÃƒÆ’Ã‚Â¤
+; Hold Shift or have CapsLock ON to get uppercase (ÃƒÆ’Ã¢â‚¬Å¾ ÃƒÆ’Ã¢â‚¬â€œ ÃƒÆ’Ã…â€œ and ÃƒÂ¡Ã‚ÂºÃ…Â¾)
 
 #NoEnv
 #SingleInstance Force
@@ -103,29 +103,33 @@ IsUpperRequested() {
 }
 
 !u::
++!u::
     if IsUpperRequested()
-        SendInput {U+00DC}  ; ÃƒÅ“
+        SendInput {U+00DC}  ; Ãœ
     else
-        SendInput {U+00FC}  ; ÃƒÂ¼
+        SendInput {U+00FC}  ; Ã¼
 return
 
 !o::
++!o::
     if IsUpperRequested()
-        SendInput {U+00D6}  ; Ãƒâ€“
+        SendInput {U+00D6}  ; Ã–
     else
-        SendInput {U+00F6}  ; ÃƒÂ¶
+        SendInput {U+00F6}  ; Ã¶
 return
 
 !a::
++!a::
     if IsUpperRequested()
-        SendInput {U+00C4}  ; Ãƒâ€ž
+        SendInput {U+00C4}  ; Ã„
     else
-        SendInput {U+00E4}  ; ÃƒÂ¤
+        SendInput {U+00E4}  ; Ã¤
 return
 
 !s::
++!s::
     if IsUpperRequested()
-        SendInput {U+1E9E}  ; Ã¡ÂºÅ¾
+        SendInput {U+1E9E}  ; áºž
     else
-        SendInput {U+00DF}  ; ÃƒÅ¸
+        SendInput {U+00DF}  ; ÃŸ
 return
